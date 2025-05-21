@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title></title>
+    <title>Shortly</title>
+    <link rel="icon" href="src/icons/computer.svg" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -11,6 +12,35 @@
       media="screen"
       href="src/sass/main.scss"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <nav class="nav">
+      <div class="nav__menu">
+        <div class="nav__logo">
+          <a href="/" class="nav__title header header--small">Shortly</a>
+        </div>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#" class="nav__link paragraph--bold">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link paragraph--bold">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link paragraph--bold">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__buttons">
+        <button class="nav__log-in button--1 paragraph--bold">Login</button>
+        <button class="nav__sign-up button--2 paragraph--bold">Sign Up</button>
+      </div>
+    </nav>
+  </body>
 </html>

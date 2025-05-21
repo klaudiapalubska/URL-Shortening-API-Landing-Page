@@ -1,0 +1,27 @@
+@use "../abstracts/index" as a;
+
+.nav {
+  width: 100%;
+  height: 10%;
+  background-color: a.$neutral-0-color;
+  display: flex;
+  justify-content: space-between;
+  padding: a.$page-margin-top a.$page-margin;
+
+  &__logo {
+  }
+  &__title {
+  }
+  &__menu {
+    display: flex;
+  }
+  &__links {
+    @include a.center-flex;
+  }
+  &__item {
+  }
+  &__link {
+  }
+  &__buttons {
+  }
+}

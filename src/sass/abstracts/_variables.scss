@@ -1,6 +1,8 @@
 // ------------------------- Colors ----------------------------- //
 $primary-color: hsl(180, 66%, 49%);
 $primary-color-2: hsl(257, 27%, 26%);
+$neutral-0-color: hsl(0, 0%, 100%);
+$neutral-900-color: hsl(0, 0%, 0%);
 
 $error-color: hsl(0, 87%, 67%);
 
@@ -12,8 +14,12 @@ $very-dark-violet-color: hsl(260, 8%, 14%);
 
 // ------------------------- Typography ----------------------------- //
 $font-size: 18px;
-$primary-font: serif;
+$primary-font: "Instrument Sans", sans-serif;
+$font-weight: 500;
+$font-weight-bold: 700;
 
 // ------------------------- Margins ----------------------------- //
+$page-margin: 7rem;
+$page-margin-top: 2rem;
 
 //-------------------------Breakpoints-----------------------------//

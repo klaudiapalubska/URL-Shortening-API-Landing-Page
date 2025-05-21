@@ -1,0 +1,21 @@
+@use "../abstracts/index" as a;
+
+html {
+  font-size: a.$font-size;
+}
+* {
+  font-family: a.$primary-font;
+  font-weight: a.$font-weight;
+}
+
+.paragraph {
+  &--bold {
+  }
+}
+
+.header {
+  &--small {
+    font-weight: a.$font-weight-bold;
+    font-size: 1.5rem;
+  }
+}
