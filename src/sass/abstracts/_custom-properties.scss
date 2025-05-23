@@ -1,0 +1,31 @@
+@use "mixins" as *;
+@use "variables" as *;
+
+// ------------------------- Margins ----------------------------- /
+:root {
+  --page-margin: 7rem;
+  --page-margin-top: 2rem;
+}
+
+@include responsive(81.25em) {
+  //1300px
+  :root {
+    --page-margin: 4rem;
+    --page-margin-top: 1.25rem;
+  }
+}
+
+@include responsive(57.5em) {
+  //920px
+  :root {
+    --page-margin: 3rem;
+    --page-margin-top: 1rem;
+  }
+}
+
+@include responsive($mobile-breakpoint) {
+  :root {
+    --page-margin: 0.6rem;
+    --page-margin-top: 1.5rem;
+  }
+}

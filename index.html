@@ -25,7 +25,7 @@
         <div class="nav__logo">
           <a href="/" class="nav__title header header--small">Shortly</a>
         </div>
-        <ul class="nav__links">
+        <ul class="nav__links list-style--menu">
           <li class="nav__item">
             <a href="#" class="nav__link paragraph--bold">Features</a>
           </li>
@@ -38,8 +38,23 @@
         </ul>
       </div>
       <div class="nav__buttons">
-        <button class="nav__log-in button--1 paragraph--bold">Login</button>
-        <button class="nav__sign-up button--2 paragraph--bold">Sign Up</button>
+        <button class="nav__log-in button paragraph--bold">Login</button>
+        <button class="nav__sign-up button button--primary paragraph--bold">
+          Sign Up
+        </button>
+      </div>
+      <input
+        type="checkbox"
+        id="menu-toggle"
+        class="hamburger__checkbox"
+        hidden
+      />
+      <div class="nav__hamburger hamburger">
+        <label for="menu-toggle" class="hamburger__toggle">
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+          <span class="hamburger__span"></span>
+        </label>
       </div>
     </nav>
   </body>

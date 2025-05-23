@@ -1,25 +1,22 @@
 // ------------------------- Colors ----------------------------- //
 $primary-color: hsl(180, 66%, 49%);
 $primary-color-2: hsl(257, 27%, 26%);
+
 $neutral-0-color: hsl(0, 0%, 100%);
+$neutral-200-color: hsl(0, 0%, 75%);
+$neutral-400-color: hsl(257, 7%, 63%);
+$neutral-700-color: hsl(255, 11%, 22%);
+$neutral-800-color: hsl(260, 8%, 14%);
 $neutral-900-color: hsl(0, 0%, 0%);
 
 $error-color: hsl(0, 87%, 67%);
 
-//temporary names
-$gray-color: hsl(0, 0%, 75%);
-$grayish-violet-color: hsl(257, 7%, 63%);
-$very-dark-blue-color: hsl(255, 11%, 22%);
-$very-dark-violet-color: hsl(260, 8%, 14%);
-
 // ------------------------- Typography ----------------------------- //
-$font-size: 18px;
+$font-size: 16px;
+$font-size-mobile: 18px;
 $primary-font: "Instrument Sans", sans-serif;
 $font-weight: 500;
 $font-weight-bold: 700;
 
-// ------------------------- Margins ----------------------------- //
-$page-margin: 7rem;
-$page-margin-top: 2rem;
-
 //-------------------------Breakpoints-----------------------------//
+$mobile-breakpoint: 44.6875em; //715px

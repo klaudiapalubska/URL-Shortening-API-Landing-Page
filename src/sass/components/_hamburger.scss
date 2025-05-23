@@ -1,0 +1,42 @@
+@use "../abstracts/index" as a;
+
+.hamburger__toggle {
+  display: inline-block;
+  cursor: pointer;
+  width: 1.6667rem;
+  height: 1.2222rem;
+  position: relative;
+
+  .hamburger__span {
+    display: block;
+    height: 0.2222rem;
+    width: 100%;
+    background-color: a.$neutral-400-color;
+    margin-bottom: 0.3333rem;
+    border-radius: 0.1111rem;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hamburger__checkbox:checked + .hamburger {
+  .hamburger__span {
+    &:nth-child(1) {
+      transform: rotate(45deg);
+      position: absolute;
+      top: 0.5rem;
+    }
+    &:nth-child(2) {
+      opacity: 0;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 0.5rem;
+    }
+  }
+}

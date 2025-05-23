@@ -6,11 +6,19 @@
   background-color: a.$neutral-0-color;
   display: flex;
   justify-content: space-between;
-  padding: a.$page-margin-top a.$page-margin;
+  padding: var(--page-margin-top) var(--page-margin);
 
   &__logo {
+    margin: 0 1.125rem;
   }
   &__title {
+    display: inline-block;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      animation: clickEffect 0.3s ease;
+    }
   }
   &__menu {
     display: flex;
@@ -19,9 +27,26 @@
     @include a.center-flex;
   }
   &__item {
+    margin: 0 1.125rem;
   }
-  &__link {
+  &__log-in {
+    margin-right: 1.6875rem;
   }
+  &__sign-up {
+    width: 6.1875rem;
+    height: 2.25rem;
+  }
+  &__links,
   &__buttons {
+    @include a.responsive(a.$mobile-breakpoint) {
+      display: none;
+    }
+  }
+  &__hamburger {
+    display: none;
+    margin: 0 1.125rem;
+    @include a.responsive(a.$mobile-breakpoint) {
+      @include a.center-flex;
+    }
   }
 }

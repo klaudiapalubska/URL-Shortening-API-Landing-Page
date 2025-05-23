@@ -1,0 +1,22 @@
+@use "../abstracts/index" as a;
+
+.button {
+  &:hover {
+    cursor: pointer;
+    color: a.$neutral-900-color;
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  &:active {
+    animation: clickEffect 0.3s ease;
+  }
+  &--primary {
+    background-color: a.$primary-color;
+    border-radius: 2.25rem;
+    color: a.$neutral-0-color;
+    text-align: center;
+    &:hover {
+      opacity: 0.5;
+      color: a.$neutral-0-color;
+    }
+  }
+}

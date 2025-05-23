@@ -1,0 +1,17 @@
+@use "../abstracts/index" as a;
+
+.list-style {
+  &--menu {
+    a {
+      display: inline-block;
+      &:hover {
+        cursor: pointer;
+        color: a.$neutral-900-color;
+        animation: pulse 1.2s ease-in-out infinite;
+      }
+      &:active {
+        animation: clickEffect 0.3s ease;
+      }
+    }
+  }
+}
