@@ -1,0 +1,27 @@
+@use "../abstracts/index" as a;
+
+.mobile-menu {
+  width: 100%;
+  max-width: 27rem;
+  height: 57vh;
+  max-height: 22rem;
+  background-color: a.$primary-color-2;
+  z-index: 10;
+  margin: 0 1.9rem;
+  border-radius: 0.5rem;
+  &__background {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    height: 95vh;
+    width: 100%;
+    background-color: a.$mobile-menu-overlay-color;
+    z-index: 9;
+  }
+  &__links {
+  }
+  &__item {
+  }
+  &__link {
+  }
+}
