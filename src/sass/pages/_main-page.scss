@@ -1,2 +1,100 @@
+@use "../abstracts/index" as a;
+
 .main-page {
+  padding: var(--page-margin-top) var(--page-margin);
+  overflow-x: hidden;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  @include a.responsive(a.$mobile-breakpoint) {
+    flex-direction: column-reverse;
+    justify-content: baseline;
+  }
+  &__info {
+    margin-left: a.$main-margin;
+    margin-top: var(--page-margin-top);
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      margin-top: 3rem;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      margin-top: 1rem;
+    }
+  }
+  &__title {
+    width: 80%;
+    text-align: start;
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      width: 90%;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      text-align: center;
+    }
+  }
+  &__header {
+  }
+  &__text {
+    color: a.$neutral-400-color;
+    width: 90%;
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 95%;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+  &__p {
+  }
+  &__button-box {
+    margin-top: var(--page-margin-top);
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      margin-top: 2.5rem;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      @include a.center-flex;
+      margin-left: -1.125rem;
+    }
+  }
+  &__btn {
+    width: 11rem;
+    height: 2.5rem;
+  }
+  &__image {
+    margin-right: -19rem;
+    @include a.responsive(a.$desktop-fix-breakpoint) {
+      margin-right: -11rem;
+    }
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      margin-right: -7rem;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 4rem;
+    }
+    @include a.responsive(a.$mobile-fix-breakpoint) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__img {
+    width: 40vw;
+    @include a.responsive(a.$big-screen-breakpoint) {
+      width: 45vw;
+    }
+    @include a.responsive(a.$desktop-breakpoint) {
+      width: 50vw;
+    }
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      width: 45vw;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 100%;
+    }
+    @include a.responsive(a.$mobile-fix-breakpoint) {
+      width: 125%;
+    }
+  }
 }

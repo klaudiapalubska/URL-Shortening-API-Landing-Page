@@ -12,6 +12,10 @@ html {
 }
 
 .paragraph {
+  font-size: 1.5rem;
+  @include a.responsive(a.$desktop-fix-breakpoint) {
+    font-size: 1rem;
+  }
   &--bold {
     font-weight: a.$font-weight-bold;
     font-size: 0.9rem;
@@ -26,8 +30,29 @@ html {
 }
 
 .header {
+  font-weight: a.$font-weight-bold;
   &--small {
-    font-weight: a.$font-weight-bold;
     font-size: 1.6875rem;
+  }
+  &--large {
+    font-size: 8rem;
+    @include a.responsive(a.$big-screen-breakpoint) {
+      font-size: 6rem;
+    }
+    @include a.responsive(a.$desktop-breakpoint) {
+      font-size: 5rem;
+    }
+    @include a.responsive(a.$desktop-fix-breakpoint) {
+      font-size: 3.75rem;
+    }
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      font-size: 3rem;
+    }
+    @include a.responsive(28.125em) {
+      font-size: 2.5rem;
+    }
+    @include a.responsive(24em) {
+      font-size: 2rem;
+    }
   }
 }
