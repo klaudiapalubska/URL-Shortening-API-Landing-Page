@@ -19,4 +19,8 @@
       color: a.$neutral-0-color;
     }
   }
+  &--primary-soft {
+    @extend .button--primary;
+    border-radius: a.$main-border-radius;
+  }
 }

@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+@mixin bg-image-settings {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @mixin responsive($breakpoint) {
   @media only screen and (max-width: $breakpoint) {
     @content;

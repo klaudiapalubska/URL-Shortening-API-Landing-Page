@@ -10,6 +10,8 @@ $neutral-800-color: hsl(260, 8%, 14%);
 $neutral-900-color: hsl(0, 0%, 0%);
 $mobile-menu-overlay-color: hsla(0, 0%, 0%, 0);
 
+$background-color: hsl(225, 33%, 95%);
+
 $error-color: hsl(0, 87%, 67%);
 
 // ------------------------- Typography ----------------------------- //
@@ -29,3 +31,5 @@ $mobile-fix-breakpoint: 26.875em; //430px
 
 //------------------------- Margins -----------------------------//
 $main-margin: 1.125rem;
+
+$main-border-radius: 0.5rem;

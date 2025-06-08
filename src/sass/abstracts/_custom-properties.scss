@@ -5,6 +5,7 @@
 :root {
   --page-margin: 7rem;
   --page-margin-top: 2rem;
+  --page-large-margin-top: 6rem;
 }
 
 @include responsive($desktop-fix-breakpoint) {
