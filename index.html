@@ -134,20 +134,27 @@
             </div>
 
             <button
-              class="shortener-section__btn button button--primary button--primary-soft paragraph--interactive"
+              class="shortener-section__btn button button--primary-soft paragraph--interactive"
             >
               Shorten it!
             </button>
           </div>
-          <ul class="shortener-section__links">
-            <li class="shortener-section__item">
-              <p class="shortener-section__link paragraph">yytrtrtyr</p>
-              <p class="shortener-section__short-link paragraph">hfghgfhgfhg</p>
-              <button
-                class="shortener-section__btn--small button button--primary paragraph--interactive"
-              >
-                Copy
-              </button>
+
+          <ul class="shortened-link__box">
+            <li class="shortened-link">
+              <p class="shortened-link__original paragraph">
+                https://example.com
+              </p>
+              <div class="shortened-link__copy-box">
+                <p class="shortened-link__short paragraph">
+                  https://short.ly/abc123
+                </p>
+                <button
+                  class="shortened-link__copy-button button button--primary-soft paragraph--interactive"
+                >
+                  Copy
+                </button>
+              </div>
             </li>
           </ul>
         </div>

@@ -100,8 +100,6 @@
   height: 20rem;
   margin-top: var(--page-large-margin-top);
   @include a.center-flex;
-  &__box {
-  }
   &__shorten-it {
     background-image: linear-gradient(
         rgba(a.$primary-color-2, 0.85),
@@ -117,10 +115,26 @@
     @include a.center-flex;
     justify-content: flex-start;
     padding: 0 3rem;
+
+    @include a.responsive(a.$mobile-breakpoint) {
+      background-image: linear-gradient(
+          rgba(a.$primary-color-2, 0.85),
+          rgba(a.$primary-color-2, 0.85)
+        ),
+        url("../icons/bg-shorten-mobile.svg");
+      flex-direction: column;
+      padding: 1rem 2rem;
+      padding-left: 2rem;
+    }
   }
   &__field {
     width: 95%;
     border-radius: a.$main-border-radius;
+    @include a.responsive(a.$mobile-breakpoint) {
+      margin: 0;
+      padding: 0.5rem;
+      width: 101%;
+    }
   }
   &__input {
     background-color: a.$neutral-0-color;
@@ -130,7 +144,19 @@
     color: a.$neutral-700-color;
     border-radius: a.$main-border-radius;
     border: 2px solid a.$neutral-0-color;
-    padding-left: 1rem;
+    text-indent: 1rem;
+
+    @include a.responsive(a.$mobile-breakpoint) {
+      padding: 0;
+      margin: 0;
+      margin-top: -0.2rem;
+      margin-left: -3px;
+    }
+    @include a.responsive(24.0625em) {
+      text-indent: 0.5rem;
+      font-size: 0.9rem;
+    }
+
     &:hover {
       cursor: pointer;
       background-color: a.$background-color;
@@ -155,15 +181,12 @@
     width: 9rem;
     height: 3rem;
     margin-left: 3rem;
-    &--small {
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 97%;
+      padding: 0;
+      margin: 0;
+      margin-top: 0.85rem;
+      margin-left: -3px;
     }
-  }
-  &__links {
-  }
-  &__item {
-  }
-  &__link {
-  }
-  &__short-link {
   }
 }
