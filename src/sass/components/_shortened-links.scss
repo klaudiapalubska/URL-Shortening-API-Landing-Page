@@ -1,24 +1,46 @@
 @use "../abstracts/index" as a;
 
-.shortened-link {
+.shortener-results {
   @include a.center-flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 84.375rem;
+  height: 4rem;
+  width: 83vw;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  background-color: a.$neutral-0-color;
+  border-radius: a.$main-border-radius;
+  @include a.responsive(a.$mobile-breakpoint) {
+    flex-direction: column;
+    height: 6rem;
+    padding: 1rem;
+  }
+  @include a.responsive(a.$mobile-fix-breakpoint) {
+    height: 7rem;
+  }
+  &__bg {
+    background-color: a.$background-color;
+    padding-bottom: 1rem;
+  }
   &__box {
-    width: 83vw;
-    max-width: 84.375rem;
-    height: 4rem;
-    background-color: a.$neutral-0-color;
-    border-radius: a.$main-border-radius;
     @include a.center-flex;
-    margin-top: 2rem;
-    padding: 0 2rem;
+    flex-direction: column;
   }
   &__original {
-    // font-size: clamp(0.75rem, 2vw, 1rem);
+    @include a.responsive(a.$mobile-fix-breakpoint) {
+    }
   }
   &__copy-box {
     @include a.center-flex;
+    @include a.responsive(a.$mobile-breakpoint) {
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+    }
+    @include a.responsive(a.$mobile-fix-breakpoint) {
+      flex-direction: column;
+    }
   }
   &__short {
     margin-right: 1rem;
@@ -27,5 +49,8 @@
   &__copy-button {
     width: 6rem;
     height: 2.5rem;
+    @include a.responsive(a.$mobile-fix-breakpoint) {
+      margin-top: 0.5rem;
+    }
   }
 }

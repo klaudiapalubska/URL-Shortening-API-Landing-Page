@@ -95,9 +95,9 @@
   }
 }
 
-.shortener-section {
+.shortener-form {
   background-color: a.$background-color;
-  height: 20rem;
+  height: 5rem;
   margin-top: var(--page-large-margin-top);
   @include a.center-flex;
   &__shorten-it {
@@ -111,7 +111,7 @@
     max-width: 84.375rem;
     height: 10rem;
     border-radius: a.$main-border-radius;
-    margin-top: -15rem;
+    margin-top: -5rem;
     @include a.center-flex;
     justify-content: flex-start;
     padding: 0 3rem;
