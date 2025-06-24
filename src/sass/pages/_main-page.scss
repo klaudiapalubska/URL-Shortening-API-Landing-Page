@@ -190,3 +190,21 @@
     }
   }
 }
+
+.statistics-section {
+  background-color: a.$background-color;
+  padding: var(--page-margin-top) var(--page-margin);
+  @include a.center-flex;
+  &__header {
+    text-align: center;
+    width: 45vw;
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 80%;
+    }
+  }
+  &__title {
+    margin-bottom: 1rem;
+  }
+  &__p {
+  }
+}

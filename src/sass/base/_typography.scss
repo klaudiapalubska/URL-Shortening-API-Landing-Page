@@ -27,12 +27,31 @@ html {
     color: a.$neutral-0-color;
     letter-spacing: 0.06rem;
   }
+  &--medium {
+    font-size: 1rem;
+    color: a.$neutral-400-color;
+    @include a.responsive(a.$mobile-breakpoint) {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .header {
   font-weight: a.$font-weight-bold;
   &--small {
     font-size: 1.6875rem;
+  }
+  &--medium {
+    font-size: 2.2rem;
+    @include a.responsive(a.$desktop-fix-breakpoint-1) {
+      font-size: 2rem;
+    }
+    @include a.responsive(28.1875em) {
+      font-size: 1.5rem;
+    }
+    @include a.responsive(21.6875em) {
+      font-size: 1.3rem;
+    }
   }
   &--large {
     font-size: 8rem;

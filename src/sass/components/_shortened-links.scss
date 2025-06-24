@@ -26,6 +26,7 @@
   &__box {
     @include a.center-flex;
     flex-direction: column;
+    margin-bottom: var(--page-margin-top);
   }
   &__original {
     @include a.responsive(a.$mobile-fix-breakpoint) {
