@@ -1,0 +1,44 @@
+@use "../abstracts/index" as a;
+
+.stats-card {
+  position: relative;
+  position: absolute;
+  z-index: 10;
+  width: 20rem;
+  height: 14rem;
+  background-color: a.$neutral-0-color;
+  border-radius: 0.5rem;
+  padding: 3.5rem 1rem 2rem 1rem;
+
+  &--first {
+    left: 5vw;
+    top: -150px;
+  }
+
+  &--second {
+    // top: -110px;
+  }
+
+  &--third {
+    right: 5vw;
+    top: -70px;
+  }
+
+  &__icon-box {
+    position: absolute;
+    bottom: 12rem;
+    background-color: a.$primary-color-2;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    @include a.center-flex;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  &__title {
+  }
+  &__text {
+  }
+}

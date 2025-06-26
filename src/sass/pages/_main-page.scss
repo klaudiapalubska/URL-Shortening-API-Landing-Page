@@ -205,6 +205,21 @@
   &__title {
     margin-bottom: 1rem;
   }
-  &__p {
+}
+
+.get-started-section {
+  background-color: a.$background-color;
+  padding: 14rem var(--page-margin);
+  height: 30rem;
+  &__cards-box {
+    position: relative;
+    @include a.center-flex;
+  }
+  &__line {
+    width: 65vw;
+    height: 0.5rem;
+    background-color: a.$primary-color;
+  }
+  &__card {
   }
 }
