@@ -2,7 +2,6 @@
 
 .stats-card {
   & {
-    position: relative;
     position: absolute;
     z-index: 10;
     width: 24vw;
@@ -20,20 +19,43 @@
     height: 22rem;
   }
 
+  @include a.responsive(a.$mobile-breakpoint) {
+    position: static;
+    width: 90vw;
+    height: fit-content;
+    min-height: 10rem;
+    padding: 1.5rem;
+    padding-bottom: 1.4rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+    text-align: center;
+  }
+
   &--first {
     left: 4vw;
     top: -9.375rem;
+    @include a.responsive(a.$mobile-breakpoint) {
+      top: auto;
+      left: auto;
+    }
   }
 
   &--second {
     @include a.responsive(71.625em) {
       top: -110px;
     }
+    @include a.responsive(a.$mobile-breakpoint) {
+      top: auto;
+    }
   }
 
   &--third {
     right: 4vw;
     top: -4.375rem;
+    @include a.responsive(a.$mobile-breakpoint) {
+      top: auto;
+      right: auto;
+    }
   }
 
   &__icon-box {
@@ -44,6 +66,11 @@
     }
     @include a.responsive(57.6875em) {
       bottom: 20rem;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      position: static;
+      bottom: auto;
+      margin: -3.5rem auto 1rem auto;
     }
     background-color: a.$primary-color-2;
     border-radius: 100%;

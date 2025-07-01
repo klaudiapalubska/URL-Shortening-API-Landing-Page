@@ -210,19 +210,33 @@
 .get-started-section {
   background-color: a.$background-color;
   padding: 14rem var(--page-margin) 18rem var(--page-margin);
-
+  height: 30rem;
   @include a.responsive(57.6875em) {
     padding-bottom: 25rem;
   }
-  height: 30rem;
+  @include a.responsive(a.$mobile-breakpoint) {
+    padding-top: var(--page-margin-top);
+    height: fit-content;
+  }
   &__cards-box {
     position: relative;
     @include a.center-flex;
+    @include a.responsive(a.$mobile-breakpoint) {
+      flex-direction: column;
+    }
   }
   &__line {
     width: 65vw;
     height: 0.5rem;
     background-color: a.$primary-color;
+    @include a.responsive(a.$mobile-breakpoint) {
+      width: 0.5rem;
+      height: 30rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__card {
   }
