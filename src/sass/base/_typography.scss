@@ -34,10 +34,17 @@ html {
       font-size: 0.9rem;
     }
   }
+  &--small {
+    font-size: 1rem;
+    color: a.$neutral-400-color;
+  }
 }
 
 .header {
   font-weight: a.$font-weight-bold;
+  &--xs {
+    font-size: 1.3rem;
+  }
   &--small {
     font-size: 1.6875rem;
   }

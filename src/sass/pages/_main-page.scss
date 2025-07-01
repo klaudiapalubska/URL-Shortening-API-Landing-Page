@@ -209,7 +209,11 @@
 
 .get-started-section {
   background-color: a.$background-color;
-  padding: 14rem var(--page-margin);
+  padding: 14rem var(--page-margin) 18rem var(--page-margin);
+
+  @include a.responsive(57.6875em) {
+    padding-bottom: 25rem;
+  }
   height: 30rem;
   &__cards-box {
     position: relative;

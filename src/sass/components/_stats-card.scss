@@ -1,32 +1,50 @@
 @use "../abstracts/index" as a;
 
 .stats-card {
-  position: relative;
-  position: absolute;
-  z-index: 10;
-  width: 20rem;
-  height: 14rem;
-  background-color: a.$neutral-0-color;
-  border-radius: 0.5rem;
-  padding: 3.5rem 1rem 2rem 1rem;
+  & {
+    position: relative;
+    position: absolute;
+    z-index: 10;
+    width: 24vw;
+    height: 14rem;
+    background-color: a.$neutral-0-color;
+    border-radius: 0.5rem;
+    padding: 3.5rem 1.5rem 2rem 1.5rem;
+  }
+
+  @include a.responsive(71.625em) {
+    height: 17rem;
+  }
+
+  @include a.responsive(57.6875em) {
+    height: 22rem;
+  }
 
   &--first {
-    left: 5vw;
-    top: -150px;
+    left: 4vw;
+    top: -9.375rem;
   }
 
   &--second {
-    // top: -110px;
+    @include a.responsive(71.625em) {
+      top: -110px;
+    }
   }
 
   &--third {
-    right: 5vw;
-    top: -70px;
+    right: 4vw;
+    top: -4.375rem;
   }
 
   &__icon-box {
     position: absolute;
     bottom: 12rem;
+    @include a.responsive(71.625em) {
+      bottom: 15rem;
+    }
+    @include a.responsive(57.6875em) {
+      bottom: 20rem;
+    }
     background-color: a.$primary-color-2;
     border-radius: 100%;
     width: 4rem;
@@ -38,6 +56,7 @@
     height: 2rem;
   }
   &__title {
+    margin-bottom: 1rem;
   }
   &__text {
   }
