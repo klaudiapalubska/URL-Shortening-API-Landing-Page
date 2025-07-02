@@ -209,14 +209,15 @@
 
 .get-started-section {
   background-color: a.$background-color;
-  padding: 14rem var(--page-margin) 18rem var(--page-margin);
+  padding: 12rem var(--page-margin) 18rem var(--page-margin);
   height: 30rem;
   @include a.responsive(57.6875em) {
-    padding-bottom: 25rem;
+    padding-bottom: 22rem;
   }
   @include a.responsive(a.$mobile-breakpoint) {
     padding-top: var(--page-margin-top);
     height: fit-content;
+    padding-bottom: var(--page-margin-top);
   }
   &__cards-box {
     position: relative;
@@ -239,5 +240,39 @@
     }
   }
   &__card {
+  }
+}
+
+.boost-links-section {
+  padding: 1rem var(--page-margin);
+  background-image: linear-gradient(
+      rgba(a.$primary-color-2, 0.85),
+      rgba(a.$primary-color-2, 0.85)
+    ),
+    url("../icons/bg-boost-desktop.svg");
+  @include a.bg-image-settings;
+  height: 20%;
+  min-height: 15rem;
+  @include a.center-flex;
+  flex-direction: column;
+  @include a.responsive(a.$mobile-breakpoint) {
+    background-image: linear-gradient(
+        rgba(a.$primary-color-2, 0.85),
+        rgba(a.$primary-color-2, 0.85)
+      ),
+      url("../icons/bg-boost-mobile.svg");
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__header {
+    color: a.$neutral-0-color;
+  }
+  &__button-box {
+  }
+  &__btn {
+    width: 10rem;
+    height: 3rem;
   }
 }
