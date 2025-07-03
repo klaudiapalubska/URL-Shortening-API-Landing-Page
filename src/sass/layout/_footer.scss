@@ -1,0 +1,38 @@
+@use "../abstracts/index" as a;
+
+.footer {
+  @include a.center-flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+  min-height: 20rem;
+  background-color: a.$neutral-800-color;
+  padding: 3.5rem var(--page-margin);
+  &__logo {
+    color: a.$neutral-0-color;
+  }
+  &__links {
+    &--socialmedia {
+      @include a.center-flex;
+    }
+  }
+  &__item {
+    margin-bottom: 0.5rem;
+    &:first-child .footer__link {
+      color: a.$neutral-0-color;
+      margin-bottom: 1rem;
+    }
+  }
+  &__link {
+    &:hover .footer__svg {
+      fill: a.$primary-color;
+    }
+  }
+  &__img {
+    width: 1.8rem;
+    margin-right: 1rem;
+  }
+  &__svg {
+    fill: a.$neutral-0-color;
+  }
+}
