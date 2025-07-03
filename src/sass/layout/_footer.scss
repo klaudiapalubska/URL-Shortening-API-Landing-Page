@@ -8,12 +8,34 @@
   min-height: 20rem;
   background-color: a.$neutral-800-color;
   padding: 3.5rem var(--page-margin);
+  @include a.responsive(a.$mobile-breakpoint) {
+    padding-bottom: 3rem;
+  }
+  @include a.responsive(a.$desktop-fix-breakpoint-1) {
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
+  @include a.responsive(a.$mobile-breakpoint) {
+    width: 100vw;
+    display: inline-block;
+    text-align: center;
+  }
   &__logo {
     color: a.$neutral-0-color;
+    @include a.responsive(a.$mobile-breakpoint) {
+      margin-bottom: 2rem;
+    }
   }
   &__links {
     &--socialmedia {
       @include a.center-flex;
+      @include a.responsive(a.$desktop-fix-breakpoint-1) {
+        width: 95%;
+        margin-left: 0.9rem;
+      }
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      margin-bottom: 2rem;
     }
   }
   &__item {
@@ -24,13 +46,17 @@
     }
   }
   &__link {
+    margin-right: 2rem;
+
     &:hover .footer__svg {
       fill: a.$primary-color;
+    }
+    @include a.responsive(a.$mobile-breakpoint) {
+      margin-right: 1rem;
     }
   }
   &__img {
     width: 1.8rem;
-    margin-right: 1rem;
   }
   &__svg {
     fill: a.$neutral-0-color;
